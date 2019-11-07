@@ -9,16 +9,9 @@
 
     <include
         android:id="@+id/appbar"
-        layout="@layout/toolbar" />
-
-    <Button
-        android:id="@+id/bOcultar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ocultar barra"
-        app:layout_constraintBottom_toBottomOf="parent"
+        layout="@layout/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

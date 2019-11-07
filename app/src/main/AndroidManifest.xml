@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".acivities.CountryMainActivity"></activity>
+        <activity android:name=".acivities.ContactsMainActivity"></activity>
+        <activity android:name=".acivities.DetalleActivity"></activity>
+
     </application>
 
 </manifest>

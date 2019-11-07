@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/FrgListado"
+        android:name="com.germangascon.toolbar.fragments.FragmentListado"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        tools:layout="@layout/fragment_listado" />
+
+    <fragment
+        android:id="@+id/FrgDetalle"
+        android:name="com.germangascon.toolbar.fragments.FragmentDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        tools:layout="@layout/fragment_detalle" />
+
+</LinearLayout>

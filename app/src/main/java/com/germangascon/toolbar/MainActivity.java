@@ -1,13 +1,16 @@
 package com.germangascon.toolbar;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.germangascon.toolbar.acivities.ContactsMainActivity;
+import com.germangascon.toolbar.acivities.CountryMainActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,19 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.appbar);
         setSupportActionBar(toolbar);
-        bOcultar = (Button) findViewById(R.id.bOcultar);
-        bOcultar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(getSupportActionBar().isShowing()) {
-                    bOcultar.setText("Mostrar barra");
-                    getSupportActionBar().hide();
-                } else {
-                    bOcultar.setText("Ocultar barra");
-                    getSupportActionBar().show();
-                }
-            }
-        });
+
     }
 
     @Override
@@ -45,11 +36,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_saluda:
-                Toast.makeText(this, "Hola", Toast.LENGTH_SHORT).show();
+            case R.id.action_mostrarContactos:
+                Intent i2 = new Intent(this, ContactsMainActivity.class);
+                startActivity(i2);
                 return true;
-            case R.id.action_settings:
-                Toast.makeText(this, "Configuración", Toast.LENGTH_SHORT).show();
+            case R.id.action_Paises:
+                Intent i = new Intent(this, CountryMainActivity.class);
+                startActivity(i);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

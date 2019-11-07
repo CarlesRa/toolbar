@@ -3,13 +3,13 @@
       xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/action_saluda"
-        android:icon="@android:drawable/star_on"
-        android:title="@string/greeting"
-        app:showAsAction="ifRoom"/>
+        android:id="@+id/action_mostrarContactos"
+        android:icon="@drawable/contacts"
+        android:title="Ver Contactos"
+        app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_settings"
-        android:icon="@android:drawable/ic_menu_preferences"
-        android:title="@string/settings"
-        app:showAsAction="never"/>
+        android:id="@+id/action_Paises"
+        android:icon="@drawable/banderita"
+        android:title="Ver Paises"
+        app:showAsAction="ifRoom" />
 </menu>
